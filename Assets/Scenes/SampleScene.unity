@@ -350,10 +350,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1739160982}
   - component: {fileID: 1739160981}
+  - component: {fileID: 1739160983}
   - component: {fileID: 1739160980}
   - component: {fileID: 1739160979}
   - component: {fileID: 1739160984}
-  - component: {fileID: 1739160983}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -511,8 +511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f938a83ec43e9349af91429cb6b9089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  _playerSpeed: 10
+  _playerSpeed: 8
   _smoothTime: 0.1
+  _speedMultiplier: 2
 --- !u!114 &1739160984
 MonoBehaviour:
   m_ObjectHideFlags: 0

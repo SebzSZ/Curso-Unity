@@ -13,15 +13,7 @@ public class BulletBehaviour : MonoBehaviour
     {
         if (collision.tag.Equals("Enemy"))
         {
-            Destroy(gameObject);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag.Equals("Enemy"))
-        {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 }

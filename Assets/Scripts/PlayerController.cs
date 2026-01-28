@@ -26,12 +26,14 @@ public class PlayerController : MonoBehaviour
     // Componentes
     private Rigidbody2D _rb2D;
     private PlayerInput _playerInput;
+    private Animator _animator;
 
     void Start()
     {
         // Asignación de componentes
         _rb2D = GetComponent<Rigidbody2D>();
         _playerInput = GetComponent<PlayerInput>();
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -46,6 +48,8 @@ public class PlayerController : MonoBehaviour
             _shootTimer = 0;
             Shoot();
         }
+
+        _animator.SetFloat("inputX", _input.x);
     }
 
     private void FixedUpdate()
